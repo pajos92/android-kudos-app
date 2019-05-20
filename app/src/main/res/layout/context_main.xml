@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tlMenuArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            android:visibility="visible" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/bKudosPlace"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_place_round"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:background="@color/colorAccent"
+                android:text=" Kudos Place" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/bKudosRoute"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_route_round"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:background="@color/colorAccent"
+                android:text=" Kudos Route" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/bKudosStatue"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_statue_round"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:background="@color/colorAccent"
+                android:text=" Kudos Statue" />
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

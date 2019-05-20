@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/place_icon"
+        android:src="@mipmap/ic_place"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/ic_statue"/>
+
+    <TextView
+        android:id="@+id/place_name"
+        android:text="Agalma Megalou Alexandrou"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/place_icon"
+        android:layout_toEndOf="@+id/place_icon"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/place_area"
+        android:text="Pieria"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_name"
+        android:layout_alignLeft="@+id/place_name"
+        android:layout_alignStart="@+id/place_name" />
+
+    <TextView
+        android:id="@+id/place_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/place_name"
+        android:layout_below="@+id/place_name"
+        android:maxLines="1"
+        android:text=""
+        android:textSize="12sp" />
+
+</RelativeLayout>
